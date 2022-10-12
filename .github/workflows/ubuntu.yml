@@ -1,18 +1,9 @@
 name: Ubuntu
 
 on:
-  push:
-    branches:
-      - main
-      - 1.5.x
-      - 1.4.x
   pull_request:
     branches:
       - main
-      - 1.5.x
-      - 1.4.x
-    paths-ignore:
-      - "doc/**"
 
 env:
   PANDAS_CI: 1
